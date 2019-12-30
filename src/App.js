@@ -25,13 +25,13 @@ function App (props){
      
         <input type="checkbox"></input>
         <div className="navigation-sub">
-          <Link to="/" className="item">Home</Link>
+          <Link to="/portfolio" className="item">Home</Link>
           <Link to="/projects" className="item">Projects</Link>
           <Link to="/music" className="item">Music</Link>
           <Link to="/about" className="item">About</Link>
         </div>
       </div>
-        <Route exact path="/" component={Home} />
+        <Route path="/portfolio" component={Home} />
         <Route path="/projects" component={Projects} />
         <Route path="/music" component={Music} />
         <Route path="/about" component={About} />
