@@ -17,27 +17,27 @@ function Projects(props) {
   return (
     <BrowserRouter>
     <div>
-    <Route path="/projects/dbm" component={DBM} />
-    <Route path="/projects/spam" component={Spam} />
-    <Route path="/projects/rubiks" component={Rubiks} />
+    <Route path="/portfolio/projects/dbm" component={DBM} />
+    <Route path="/portfolio/projects/spam" component={Spam} />
+    <Route path="/portfolio/projects/rubiks" component={Rubiks} />
       <h1>Check out my projects!</h1>
       <div className ="project-thumbs">
       <Thumbnail
-        link="/projects/dbm"
+        link="/portfolio/projects/dbm"
         image={dembeat}
         title="Democratic Beat-Making"
         category="HTML, CSS, Javascript, NodeJS"
         className="project-link"
       />
       <Thumbnail
-        link="/projects/spam"
+        link="/portfolio/projects/spam"
         image={spammusic}
         title="Spam Music Bot"
         category="Max/MSP, NodeJS"
         className="project-link"
       />
        <Thumbnail
-        link="/projects/rubiks"
+        link="/portfolio/projects/rubiks"
         image={rubiksThumb}
         title="Pseudo-Rubiks Cube"
         category="HTML, CSS, Javascript"
