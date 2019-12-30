@@ -31,7 +31,7 @@ function App (props){
           <Link to="/portfolio/about" className="item">About</Link>
         </div>
       </div>
-        <Route path="/portfolio" component={Home} />
+        <Route direct path="/portfolio" component={Home} />
         <Route path="/portfolio/projects" component={Projects} />
         <Route path="/portfolio/music" component={Music} />
         <Route path="/portfolio/about" component={About} />
