@@ -1,0 +1,105 @@
+.project-thumbs{
+    display: flex;
+    text-align:center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project{
+    text-align:center;
+    position: relative;
+    font-weight:bold;
+   margin: 5px;
+  }
+  
+  .project img{
+    width:200px;
+    height:200px;
+  }
+  
+  .project-words{
+    transition: opacity 0.5s;
+    opacity:0%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .project-words:hover{
+    transition: opacity 0.5s;
+    opacity:100%;
+    background-color: rgba(27, 101, 126, 0.90);
+  }
+  
+  .project-title{
+    position: relative;
+  }
+
+  .project-link:active{
+      color: black;
+  }
+
+  
+  .project-link:visited{
+    color: black;
+}
+  
+  .project-category{
+    position:relative;
+    color: black;
+    font-size: small;
+  }
+
+  #spam-img{
+    min-width: 400px;
+    max-width: 700px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #rubiks-img{
+    min-width: 200px;
+    max-width: 300px;
+  }
+  .project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .project-img{
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+  }
+
+  .text-container{
+      display: flex;
+      align-items: top;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 80%
+  }
+ 
+  .description{
+    max-height: 200px;
+    max-width: 600px;
+    text-align: left;
+    overflow: auto;
+    -ms-overflow-style: none;
+  }
+
+  .description::-webkit-scrollbar{
+      display: none;
+  }
+ 
+  .tech-tree{
+    text-align: left;
+    margin: 10px;
+  }

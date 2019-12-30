@@ -28,6 +28,85 @@
   color: #61dafb;
 }
 
+
+.thumbimg{
+  height:64px;
+  width:64px;
+  margin:5px;
+}
+.item{
+  margin:5px;
+  font-weight: bold;
+  color: snow;
+}
+.item:visited{
+  color:snow;
+}
+
+.item:active{
+  color:red;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.about-container > p{
+  text-align: left;
+  max-width: 700px;
+  width: 80%;
+}
+
+/* Picture in replacement of checkbox, vertical unchecked */
+input[type=checkbox]{
+  content: url("./Hamburger_icon.png");
+  display:block;
+  width: 50px;
+  height: 50px;
+  opacity: 50%;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform:rotate(90deg);
+
+  transition: transform 1s, opacity 0.5s;
+  -webkit-transition: -webkit-transform 1s, opacity 0.5s;
+}
+
+input[type=checkbox]:hover{
+  opacity: 100%;
+}
+
+input[type=checkbox]:checked{
+  transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -webkit-transform:rotate(0deg);
+}
+
+
+.navigation-sub{
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type=checkbox]:checked ~ .navigation-sub{
+  display: flex;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

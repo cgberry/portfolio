@@ -1,25 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
+
+// Import the BrowserRouter, Route and Link components
+import { BrowserRouter, Route, Link } from 'react-router-dom'; 
+
+
+
+import Home from './Home/Home.js'; 
+import Projects from './Projects/Projects.js'; 
+import Music from './Music.js'; 
+import About from './About.js'; 
+
+//import Bouncer from './Home/js/Bouncer.js'
+// import Sketch from '.Home/js/Sketch.js'
+
 import './App.css';
 
-function App() {
+function App (props){
+ 
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id = "myCanvas"></div>
+      <div className="navigation">
+     
+        <input type="checkbox"></input>
+        <div className="navigation-sub">
+          <Link to="/" className="item">Home</Link>
+          <Link to="/projects" className="item">Projects</Link>
+          <Link to="/music" className="item">Music</Link>
+          <Link to="/about" className="item">About</Link>
+        </div>
+      </div>
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/music" component={Music} />
+        <Route path="/about" component={About} />
+        
     </div>
+    </BrowserRouter>
+        
   );
 }
 
